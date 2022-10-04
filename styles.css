@@ -1,0 +1,18 @@
+body {
+    background-color: rgba(204, 155, 200, 0.274);
+}
+
+
+.bg {
+    color: rgb(224, 122, 171);
+    font-family: "cursive";
+
+}
+
+.ita {
+    font-style: italic;
+}
+
+.borderr {
+    border: 2px solid rgba(255, 105, 180, 0.548);
+}
