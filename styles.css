@@ -9,6 +9,12 @@ body {
 
 }
 
+
+
+label {
+    font-weight: bold;
+}
+
 .ita {
     font-style: italic;
 }
