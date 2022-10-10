@@ -41,10 +41,10 @@
                             <div class="form-group col-md-4">
                                 <label for="kackisi">Evvvet! Kaç Kişi Partiliyoruz?</label>
                                 <select id="kackisi" required class="form-control">
-                                    <option selected>Seçiniz...</option>
-                                    <option>2-3 Kişilik / max 4 kelime</option>
-                                    <option>4-6 Kişilik / max 8 kelime</option>
-                                    <option>7+ Kişilik / max 10 kelime</option>
+                                    <option selected value="0 TL">Seçiniz...</option>
+                                    <option value="150 TL">2-3 Kişilik / max 4 kelime</option>
+                                    <option value="250 TL">4-6 Kişilik / max 8 kelime</option>
+                                    <option value="350 TL">7+ Kişilik / max 10 kelime</option>
                                 </select>
                             </div>
                             <div class="form-group col-md-2">
@@ -79,9 +79,7 @@
                         </div>
 
 
-                        <label style="font-size:40px" for="tutar"> Ödenecek Tutar:<label for="">
-
-                            </label> </label>
+                        <label style="font-size:40px" for="tutar"> Ödenecek Tutar:<span id="fiyat"></span></label>
                         <div>
                             <button type="submit" class="btn btn-primary">Siparişi Tamamla!</button>
                         </div>
@@ -117,4 +115,14 @@
             </div>
         </div>
     </div>
+    <script>
+
+        const selectDeneme = document.querySelector("#kackisi");
+        selectDeneme.addEventListener('change', (event) => {
+            const result = document.querySelector("#fiyat");
+            result.textContent = event.target.value;
+        })
+    </script>
 </body>
+
+</html>
